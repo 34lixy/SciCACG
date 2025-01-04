@@ -1,0 +1,32 @@
+{
+    "data_dir": "data",
+    "embeddings_file": "glove.6B.300d.txt",
+    "target_dir": "preprocessed_data",
+
+    "lowercase": false,
+    "ignore_punctuation": false,
+    "num_words": null,
+    "stopwords": [],
+    "label_dict": {"Comparable": 1, "NoComparable": 2},
+    "bos": "_BOS_",
+    "eos": "_EOS_",
+
+    "train_data": "preprocessed_data/train_data.pkl",
+    "valid_data": "preprocessed_data/dev_data.pkl",
+    "test_data": "preprocessed_data/test_data.pkl",
+    "embeddings": "preprocessed_data/embeddings.pkl",
+
+    "check_point_dir": "checkpoints",
+    "checkpoint": "checkpoints/best.pth.tar",
+    "vocab_size": 100000,
+    "emb_dim": 256,
+    "hidden_size": 256,
+    "dropout": 0.1,
+    "num_classes": 2,
+
+    "epochs": 16,
+    "batch_size": 32,
+    "lr": 0.004,
+    "patience": 5,
+    "max_gradient_norm": 8.0
+}
