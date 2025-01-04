@@ -1,0 +1,28 @@
+{
+    "data_dir": "data",
+    "target_dir": "preprocessed_data",
+
+    "lowercase": true,
+    "ignore_punctuation": false,
+    "num_words": null,
+    "stopwords": [],
+    "labeldict": {"Comparable": 0, "NoComparable": 1},
+
+    "train_data": "preprocessed_data/train_data.pkl",
+    "valid_data": "preprocessed_data/dev_data.pkl",
+    "test_data": "preprocessed_data/test_data.pkl",
+
+    "check_point_dir": "checkpoints",
+    "checkpoint": "checkpoints/best.pth.tar",
+    "vocab_size":143200,
+    "emb_dim": 900,
+    "hidden_size":450,
+    "dropout": 0.4,
+
+
+    "epochs": 12,
+    "batch_size":64,
+    "lr":0.0004,
+    "patience": 3,
+    "max_gradient_norm": 10.0
+}
